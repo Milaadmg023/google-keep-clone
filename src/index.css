@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+.container {
+  margin: 2rem 0 0;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link.active .ListItem {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #feefc3;
+}
+
+.no-div {
+  margin-top: 20vh;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 890px) {
+  .container {
+    margin-left: 4rem !important;
+  }
+}
